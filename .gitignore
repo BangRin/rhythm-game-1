@@ -1,0 +1,5 @@
+BMS/Library/*
+BMS/obj/*
+BMS/Logs/*
+BMS/Temp/*
+BMS/.vs/*

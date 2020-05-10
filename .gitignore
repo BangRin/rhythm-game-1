@@ -3,3 +3,8 @@ BMS/obj/*
 BMS/Logs/*
 BMS/Temp/*
 BMS/.vs/*
+rhythm_saber(test)/Library/*
+rhythm_saber(test)/obj/*
+rhythm_saber(test)/Logs/*
+rhythm_saber(test)/Temp/*
+rhythm_saber(test)/.vs/*

@@ -8,3 +8,7 @@ rhythm_saber(test)/obj/*
 rhythm_saber(test)/Logs/*
 rhythm_saber(test)/Temp/*
 rhythm_saber(test)/.vs/*
+RhythmGame/RhythmGame/.vs/
+RhythmGame/RhythmGame/Library/
+RhythmGame/RhythmGame/Temp/
+RhythmGame/RhythmGame/obj/

@@ -1,14 +1,23 @@
-BMS/Library/*
-BMS/obj/*
-BMS/Logs/*
-BMS/Temp/*
-BMS/.vs/*
-rhythm_saber(test)/Library/*
-rhythm_saber(test)/obj/*
-rhythm_saber(test)/Logs/*
-rhythm_saber(test)/Temp/*
-rhythm_saber(test)/.vs/*
-RhythmGame/RhythmGame/.vs/
+PlayerPrefs/New Unity Project/Library/*
+PlayerPrefs/New Unity Project/Logs/*
+PlayerPrefs/New Unity Project/obj/*
+objectPool/objpool/Library/*
+objectpool/objpool/Logs/*
+objectpool/objpool/obj/*
+objectpool/objpool/temp/*
+objectpool/objpool/.vs/*
+FSM/Library/
+FSM/obj/
+FSM/.vs/
+Steamworks/SteamWorksTest/Library/PackageCache/com.unity.timeline@1.2.14/Editor/Extensions/TrackExtensions.cs
+Steamworks/SteamWorksTest/Library/
+Steamworks/SteamWorksTest/Temp/UnityTempFile-70a947288fac5144aaf95bf1a8bbda6d
+Steamworks/SteamWorksTest/Temp/
+Steamworks/build/
+Steamworks/SteamWorksTest/.vs/
 RhythmGame/RhythmGame/Library/
-RhythmGame/RhythmGame/Temp/
 RhythmGame/RhythmGame/obj/
+ACTIONFUNCLINQ/New Unity Project/Library/
+Steamworks/SteamWorksTest/obj/Debug/Assembly-CSharp-firstpass.csproj.FileListAbsolute.txt
+Steamworks/SteamWorksTest/obj/
+ACTIONFUNCLINQ/New Unity Project/Assets/SolarSystemPackage/

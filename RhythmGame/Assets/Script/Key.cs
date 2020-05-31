@@ -21,7 +21,7 @@ public class Key : MonoBehaviour
                 .OrderBy(t => Mathf.Abs(this.transform.position.y - t.transform.position.y)))
             {
                 var dif = Mathf.Abs(this.transform.position.y - note.transform.position.y);
-                if (dif > 50f)
+                if (dif > NoteManager.NOTE_HIT_TUNEL * NoteManager.Instance.noteSpeedTimeRatio)
                     continue;
 
                 note.Hit(dif);

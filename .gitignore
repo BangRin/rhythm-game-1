@@ -21,3 +21,8 @@ ACTIONFUNCLINQ/New Unity Project/Library/
 Steamworks/SteamWorksTest/obj/Debug/Assembly-CSharp-firstpass.csproj.FileListAbsolute.txt
 Steamworks/SteamWorksTest/obj/
 ACTIONFUNCLINQ/New Unity Project/Assets/SolarSystemPackage/
+RhythmGame/Library/
+RhythmGame/.vs/
+*.csproj
+*.sln
+RhythmGame/obj/

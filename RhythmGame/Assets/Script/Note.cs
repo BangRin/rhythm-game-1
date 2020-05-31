@@ -15,10 +15,10 @@ public class Note : MonoBehaviour
 
     public void Hit(float dif)
     {
-        if (dif > NoteManager.NOTE_MISS_TUNEL * NoteManager.Instance.noteSpeedTimeRatio)
+        if (dif > NoteManager.NOTE_HIT_TUNEL * NoteManager.Instance.noteSpeedTimeRatio)
             return;
 
-        if(dif > NoteManager.NOTE_PERFECT_TUNEL * NoteManager.Instance.noteSpeedTimeRatio) // 30.1f ~ 50 사이는 미스
+        if(dif > NoteManager.NOTE_MISS_TUNEL * NoteManager.Instance.noteSpeedTimeRatio) // 30.1f ~ 50 사이는 미스
         {
             GameManager.Instance.missCount++;
         }
@@ -32,6 +32,7 @@ public class Note : MonoBehaviour
 
     void Remove()
     {
+        NoteManager.Notes.Remove(this);
         Destroy(gameObject);
     }
 

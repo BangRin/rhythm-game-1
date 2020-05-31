@@ -24,6 +24,11 @@ public class GameManager : MonoBehaviour
     public Text perfectCountText;
     public Text titleText;
 
+
+    public GameObject perfectFX;
+    public GameObject missFX;
+
+
     public VideoPlayer videoPlayer;
 
     private SongData currentSong;
@@ -40,6 +45,14 @@ public class GameManager : MonoBehaviour
         }
         set
         {
+            if (_missCount < value)
+            {
+                perfectFX.SetActive(false);
+                missFX.SetActive(false);
+                missFX.SetActive(true);
+            }
+
+
             missCountText.text = string.Format("Miss : {0}", value);
             _missCount = value;
         }
@@ -55,6 +68,14 @@ public class GameManager : MonoBehaviour
         }
         set
         {
+            if(_perfectCount < value)
+            {
+                missFX.SetActive(false);
+                perfectFX.SetActive(false);
+                perfectFX.SetActive(true);
+            }
+
+
             perfectCountText.text = string.Format("Perfect : {0}", value);
             _perfectCount = value;
         }

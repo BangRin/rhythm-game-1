@@ -21,8 +21,9 @@ public class NoteManager : MonoBehaviour
 
     public const float NOTE_START_POSITION = 800f;
     public const float NOTE_DEFAULT_SPEED = 300f;
-    public const float NOTE_PERFECT_TUNEL = 50f;
-    public const float NOTE_MISS_TUNEL = 30f;
+    //public const float NOTE_PERFECT_TUNEL = 50f;
+    public const float NOTE_HIT_TUNEL = 100f;
+    public const float NOTE_MISS_TUNEL = 50f;
 
 
 

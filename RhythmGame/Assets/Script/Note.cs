@@ -15,10 +15,10 @@ public class Note : MonoBehaviour
 
     public void Hit(float dif)
     {
-        if (dif > 50f)
+        if (dif > NoteManager.NOTE_MISS_TUNEL * NoteManager.Instance.noteSpeedTimeRatio)
             return;
 
-        if(dif > 30f) // 30.1f ~ 50 사이는 미스
+        if(dif > NoteManager.NOTE_PERFECT_TUNEL * NoteManager.Instance.noteSpeedTimeRatio) // 30.1f ~ 50 사이는 미스
         {
             GameManager.Instance.missCount++;
         }
@@ -39,7 +39,10 @@ public class Note : MonoBehaviour
     {
         transform.Translate(Vector3.down * speed * Time.deltaTime);
 
-        if(transform.position.y < -320)
+        if (transform.position.y < -320)
+        {
+            GameManager.Instance.missCount++;
             Remove();
+        }
     }
 }

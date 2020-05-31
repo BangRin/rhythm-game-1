@@ -26,3 +26,4 @@ RhythmGame/.vs/
 *.csproj
 *.sln
 RhythmGame/obj/
+RhythmGame/Temp/

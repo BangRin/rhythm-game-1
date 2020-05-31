@@ -95,7 +95,7 @@ public class GameManager : MonoBehaviour
         for(int i = currentSong.noteDatas.Count - 1; i >= 0; i--)
         {
             var item = currentSong.noteDatas[i];
-            if (Mathf.Abs((float)(item.time - videoPlayer.time)) < 0.05f)
+            if (Mathf.Abs((float)((item.time - (NoteManager.NOTE_START_POSITION / (NoteManager.NOTE_DEFAULT_SPEED * NoteManager.Instance.noteSpeedTimeRatio))) - videoPlayer.time)) < 0.05f)
             {
                 NoteManager.Instance.MakeNote(item.keyCode);
                 currentSong.noteDatas.RemoveAt(i);

@@ -18,12 +18,15 @@ public class Key : MonoBehaviour
         if(Input.GetKeyDown(keyCode)) // 누른 시점
         {
             NoteManager.Notes.RemoveAll(t => t == null);
-            foreach (var note in NoteManager.Notes.Where(t => t.keyCode == keyCode))
+            foreach (var note in NoteManager.Notes.Where(t => t.keyCode == keyCode)
+                .OrderBy(t => Mathf.Abs(this.transform.position.y - t.transform.position.y)))
             {
                 var dif = Mathf.Abs(this.transform.position.y - note.transform.position.y);
                 if (dif > 50f)
                     continue;
+
                 note.Hit(dif);
+                break;
             }
         }
 

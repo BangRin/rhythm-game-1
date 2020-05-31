@@ -949,7 +949,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -131.68996, y: -273.5}
+  m_AnchoredPosition: {x: -183.5, y: -273.5}
   m_SizeDelta: {x: 51.81, y: 29.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797820704
@@ -1113,7 +1113,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -183.49995, y: -273.5}
+  m_AnchoredPosition: {x: -131.69, y: -273.5}
   m_SizeDelta: {x: 51.81, y: 29.09}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &838006373
@@ -1733,6 +1733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6783b20efc7935048a74046f12c86a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  noteSpeedTimeRatio: 3.5
   noteParent: {fileID: 240215890}
   notePrefab: {fileID: 6996883081265278090, guid: d51cefa488feb7a47bbf6001461f6980,
     type: 3}
